@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mouse-moove"
+version = "0.1.0"
+description = "moove the mouse automatiquely"
+authors = ["ludo06000 <lc06000@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+PyAutoGUI = "^0.9.54"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
