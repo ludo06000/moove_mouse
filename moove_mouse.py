@@ -8,9 +8,11 @@ def move_mouse_randomly(duration :int) -> None :
         while True :
             x = random.randint(600, 700)
             y = random.randint(200, 600)
+            hour = time.localtime()
             pyautogui.moveTo(x, y, 0.5)
             mouse_position = pyautogui.position()
             print(f'La position de la souris est : {mouse_position}')
+            print(f'Mouvement à {hour.tm_hour}:{hour.tm_min}:{hour.tm_sec}')
             time.sleep(duration)
     except KeyboardInterrupt:
         print('\n')
