@@ -20,7 +20,7 @@ def move_mouse_randomly(duration :int) -> None :
 
 if __name__ == "__main__" :
     print('Press Ctrl-C to quit.')
-    duration = int(input("Veuillez entréer le temps de pause : (defaut 90)") or 90)
+    duration = int(input("Veuillez entréer le temps de pause : (defaut 500)") or 500)
 
     try:
         move_mouse_randomly(duration=duration)
